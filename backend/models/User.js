@@ -8,16 +8,16 @@ const UserSchema= new Schema({
     },
     location:{
         type:String,
-        requireed:true,
+        required:true,
     },
     email:{
         type:String,
-        requireed:true,
+        required:true,
     },
     
     password:{
         type:String,
-        requireed:true,
+        required:true,
     },
     date:{
         type:Date,

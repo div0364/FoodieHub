@@ -51,7 +51,7 @@ router.post("/createuser", [
 
                 const pwdCompare=await bcrypt.compare(req.body.password,userData.password);
                 if(!pwdCompare){
-                    return res.status.json({success: true })
+                    return res.status(400).json({errors:"Try logging with correct credentials"})
                 }
                 
                 const data={
